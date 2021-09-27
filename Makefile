@@ -3,10 +3,10 @@ CFLAGS = -Wall
 INPUT_FILE = tf
 
 build:
-	$(CC) $(CFLAGS) -o a lexer.c
+	$(CC) $(CFLAGS) -o a.out lexer.c
 
 run: build
-	./a $(INPUT_FILE)
+	./a.out $(INPUT_FILE)
 	
 clean:
-	rm -f a
+	rm -f a.out
